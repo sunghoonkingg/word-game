@@ -16,11 +16,11 @@ public class TestController {
 
     @GetMapping(value = "/wordGame")
     public String Test() throws IOException {
-        String substring = "test";
+        String word = "word";
 
         List<String> words = new ArrayList<>();
 
-        File file = new File("/Users/kimsunghoon/Downloads/test-ecs/" + substring);
+        File file = new File("/Users/kimsunghoon/Downloads/test-ecs/" + word);
         FileReader filereader = new FileReader(file);
         BufferedReader bufReader = new BufferedReader(filereader);
         String line = "";
